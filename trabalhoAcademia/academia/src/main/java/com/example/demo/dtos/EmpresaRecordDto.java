@@ -1,0 +1,8 @@
+package com.example.demo.dtos;
+
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+
+public record EmpresaRecordDto(@NotNull @NotBlank String nomeempresa,
+                               @NotNull @NotBlank String cnpj) {
+}
